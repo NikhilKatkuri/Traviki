@@ -8,6 +8,7 @@ import 'package:traviki/Presentation/auth/login/app_login.dart';
 import 'package:traviki/Presentation/auth/register/app_register.dart';
 import 'package:traviki/Presentation/auth/welcome/app_welcome.dart';
 import 'package:traviki/Presentation/main/home/home.dart';
+import 'package:traviki/Presentation/main/main_wrapper.dart';
 import 'package:traviki/Presentation/splash/app_splash.dart';
 
 // main
@@ -29,7 +30,9 @@ class AppRoutes {
       '/forgotten_password_flow/forgotpassword/UserPasswordChangedSuccess';
 
   // main
-  static const String home = '/home';
+  static const String main = '/main';
+  static const String home = '/main/home';
+  
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -56,7 +59,8 @@ class AppRoutes {
       // main
       case home:
         return MaterialPageRoute(builder: (_) => const Home());
-
+      case main:
+        return MaterialPageRoute(builder: (_) =>  MainWrapper());
       default:
         return MaterialPageRoute(
           builder:

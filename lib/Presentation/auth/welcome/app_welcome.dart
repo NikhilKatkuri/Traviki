@@ -74,7 +74,8 @@ class _AppWelcomeState extends State<AppWelcome> {
                 const SizedBox(height: 46),
                 TextButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, AppRoutes.home);
+                    Navigator.pushNamed(context, AppRoutes.main);
+                    
                   },
                   child: Text(
                     "Continue as a guest",
