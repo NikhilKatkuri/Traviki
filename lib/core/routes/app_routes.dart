@@ -1,18 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:traviki/Presentation/forgotten_password_flow/user_create_password.dart';
-import 'package:traviki/Presentation/forgotten_password_flow/user_forgot_password.dart';
-import 'package:traviki/Presentation/forgotten_password_flow/user_otp_verfiy.dart';
-import 'package:traviki/Presentation/forgotten_password_flow/user_password_changed_success.dart';
-import 'package:traviki/Presentation/login/app_login.dart';
-import 'package:traviki/Presentation/register/app_register.dart';
+// auth
+import 'package:traviki/Presentation/auth/forgotten_password_flow/user_create_password.dart';
+import 'package:traviki/Presentation/auth/forgotten_password_flow/user_forgot_password.dart';
+import 'package:traviki/Presentation/auth/forgotten_password_flow/user_otp_verfiy.dart';
+import 'package:traviki/Presentation/auth/forgotten_password_flow/user_password_changed_success.dart';
+import 'package:traviki/Presentation/auth/login/app_login.dart';
+import 'package:traviki/Presentation/auth/register/app_register.dart';
+import 'package:traviki/Presentation/auth/welcome/app_welcome.dart';
+import 'package:traviki/Presentation/main/home/home.dart';
 import 'package:traviki/Presentation/splash/app_splash.dart';
-import 'package:traviki/Presentation/welcome/app_welcome.dart';
+
+// main
 
 class AppRoutes {
   static const String splash = '/splash';
+
+  // auth
   static const String login = '/login';
   static const String register = '/register';
-  static const String home = '/home';
   static const String welcome = '/welcome';
   static const String forgotpassword =
       '/forgotten_password_flow/forgotpassword';
@@ -23,10 +28,14 @@ class AppRoutes {
   static const String userPasswordChangedSuccess =
       '/forgotten_password_flow/forgotpassword/UserPasswordChangedSuccess';
 
+  // main
+  static const String home = '/home';
+
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case splash:
         return MaterialPageRoute(builder: (_) => const AppSplash());
+      // auth
       case login:
         return MaterialPageRoute(builder: (_) => const AppLogin());
       case welcome:
@@ -38,9 +47,16 @@ class AppRoutes {
       case forgotpasswordUserOtpVerfiy:
         return MaterialPageRoute(builder: (_) => const UserOtpVerfiy());
       case forgotpasswordUserCreatePassword:
-        return MaterialPageRoute(builder: (_) => UserCreatePassword());
+        return MaterialPageRoute(builder: (_) => const UserCreatePassword());
       case userPasswordChangedSuccess:
-        return MaterialPageRoute(builder: (_) => UserPasswordChangedSuccess());
+        return MaterialPageRoute(
+          builder: (_) => const UserPasswordChangedSuccess(),
+        );
+
+      // main
+      case home:
+        return MaterialPageRoute(builder: (_) => const Home());
+
       default:
         return MaterialPageRoute(
           builder:

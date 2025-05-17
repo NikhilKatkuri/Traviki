@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:traviki/Presentation/welcome/app_welcome.dart';
+import 'package:traviki/Presentation/auth/welcome/app_welcome.dart';
 import 'package:traviki/core/images/app_images.dart';
 
 class AppSplash extends StatefulWidget {

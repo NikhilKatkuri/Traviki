@@ -10,4 +10,7 @@ class AppVectors {
 
   // eye_slash
   static const String eyeSlash = '${_baseUrl}eye_slash$_format';
+ 
+  // menu
+  static const String menu = '${_baseUrl}menu$_format';
 }

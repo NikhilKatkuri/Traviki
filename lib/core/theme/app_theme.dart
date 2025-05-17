@@ -39,4 +39,10 @@ class AppTheme {
       ),
     ),
   );
+
+  static final mainTheme =ThemeData(
+    scaffoldBackgroundColor: Colors.white,
+    // fontFamily: 'poppins'
+    fontFamily: 'Urbanist',
+  );
 }

@@ -13,4 +13,7 @@ class AppImages {
 
   // sticker
   static const String sticker = '${_baseUrl}Sticker$_format';
+  
+  // sticker
+  static const String profile = '${_baseUrl}profile$_format';
 }

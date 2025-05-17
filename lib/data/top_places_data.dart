@@ -1,0 +1,81 @@
+import 'package:traviki/models/place.dart';
+
+List<Place> topPlaces = [
+  Place(
+    name: "Ranu Kumbolo",
+    imagePath: "assets/images/Ranu Kumbolo.jpg",
+    city: "Komodo Island",
+    state: "Lumajang, Jawa timur",
+    rating: 4.8,
+  ),
+  Place(
+    name: "Pink Beach",
+    imagePath: "assets/images/pink_beach.jpg",
+    city: "Komodo Island",
+    state: "Indonesia",
+    rating: 4.8,
+  ),
+  Place(
+    name: "Zhangjiajie Forest",
+    imagePath: "assets/images/zhangjiajie.jpg",
+    city: "Hunan",
+    state: "China",
+    rating: 4.9,
+  ),
+  Place(
+    name: "Machu Picchu",
+    imagePath: "assets/images/machu_picchu.jpg",
+    city: "Cusco Region",
+    state: "Peru",
+    rating: 5.0,
+  ),
+  Place(
+    name: "Santorini",
+    imagePath: "assets/images/santorini.jpg",
+    city: "Cyclades",
+    state: "Greece",
+    rating: 4.8,
+  ),
+  Place(
+    name: "Banff National Park",
+    imagePath: "assets/images/banff.jpg",
+    city: "Alberta",
+    state: "Canada",
+    rating: 4.9,
+  ),
+  Place(
+    name: "Mount Fuji",
+    imagePath: "assets/images/fuji.jpg",
+    city: "Honshu",
+    state: "Japan",
+    rating: 4.7,
+  ),
+  Place(
+    name: "Plitvice Lakes",
+    imagePath: "assets/images/plitvice.jpg",
+    city: "Lika-Senj",
+    state: "Croatia",
+    rating: 4.8,
+  ),
+  Place(
+    name: "Trolltunga",
+    imagePath: "assets/images/trolltunga.jpg",
+    city: "Vestland",
+    state: "Norway",
+    rating: 4.7,
+  ),
+  Place(
+    name: "Antelope Canyon",
+    imagePath: "assets/images/antelope.jpg",
+    city: "Arizona",
+    state: "USA",
+    rating: 4.8,
+  ),
+  Place(
+    name: "Hallstatt",
+    imagePath: "assets/images/hallstatt.jpg",
+    city: "Salzkammergut",
+    state: "Austria",
+    rating: 4.9,
+  ),
+];
