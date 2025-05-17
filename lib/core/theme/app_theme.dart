@@ -17,7 +17,7 @@ class AppTheme {
       ),
       fillColor: AppColors.light,
       filled: true,
-      floatingLabelStyle: TextStyle(color: AppColors.dark,fontSize: 14),
+      floatingLabelStyle: TextStyle(color: AppColors.dark, fontSize: 14),
     ),
     textTheme: const TextTheme(
       headlineLarge: TextStyle(
@@ -26,7 +26,7 @@ class AppTheme {
         letterSpacing: -0.5,
         color: AppColors.dark,
       ),
-      bodyMedium: TextStyle(fontSize: 14, color: AppColors.darkgray), 
+      bodyMedium: TextStyle(fontSize: 14, color: AppColors.darkgray),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
@@ -40,9 +40,10 @@ class AppTheme {
     ),
   );
 
-  static final mainTheme =ThemeData(
+  static final mainTheme = ThemeData(
     scaffoldBackgroundColor: Colors.white,
     // fontFamily: 'poppins'
     fontFamily: 'Urbanist',
+     
   );
 }

@@ -43,7 +43,6 @@ class _HomeState extends State<Home> {
             Expanded(
               child: SingleChildScrollView(
                 padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -64,7 +63,7 @@ class _HomeState extends State<Home> {
                         color: AppColors.gray,
                       ),
                     ),
-                    SizedBox(height: 32),
+                    SizedBox(height: 36),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -77,7 +76,7 @@ class _HomeState extends State<Home> {
                     SizedBox(height: 24),
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
-                      padding: const EdgeInsets.fromLTRB(0, 16, 16, 16),
+                      padding: const EdgeInsets.fromLTRB(0, 0, 16, 16),
                       child: Row(
                         children: List.generate(
                           topPlaces.length,

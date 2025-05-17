@@ -10,10 +10,12 @@ class AppVectors {
 
   // eye_slash
   static const String eyeSlash = '${_baseUrl}eye_slash$_format';
- 
+
   // menu
   static const String menu = '${_baseUrl}menu$_format';
 
+  static const String search = '${_baseUrl}Search$_format';
+  
   static const String home = '${_baseUrl}home_outline$_format';
   static const String homeFilled = '${_baseUrl}home_filled$_format';
 
