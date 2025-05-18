@@ -7,6 +7,7 @@ List<Place> topPlaces = [
     city: "Komodo Island",
     state: "Lumajang, Jawa timur",
     rating: 4.8,
+    description: "A serene lake in the Bromo Tengger Semeru National Park, surrounded by scenic mountain views and popular among trekkers.",
   ),
   Place(
     name: "Pink Beach",
@@ -14,6 +15,7 @@ List<Place> topPlaces = [
     city: "Komodo Island",
     state: "Indonesia",
     rating: 4.8,
+    description: "One of the few pink sand beaches in the world, offering crystal-clear waters and unique marine biodiversity.",
   ),
   Place(
     name: "Zhangjiajie Forest",
@@ -21,6 +23,7 @@ List<Place> topPlaces = [
     city: "Hunan",
     state: "China",
     rating: 4.9,
+    description: "Known for its towering sandstone pillars, this forest inspired the landscape in the movie Avatar.",
   ),
   Place(
     name: "Machu Picchu",
@@ -28,6 +31,7 @@ List<Place> topPlaces = [
     city: "Cusco Region",
     state: "Peru",
     rating: 5.0,
+    description: "An ancient Incan city located high in the Andes Mountains, renowned for its historical significance and breathtaking views.",
   ),
   Place(
     name: "Santorini",
@@ -35,6 +39,7 @@ List<Place> topPlaces = [
     city: "Cyclades",
     state: "Greece",
     rating: 4.8,
+    description: "A picturesque island famous for its whitewashed buildings, blue domes, and stunning sunsets over the Aegean Sea.",
   ),
   Place(
     name: "Banff National Park",
@@ -42,6 +47,7 @@ List<Place> topPlaces = [
     city: "Alberta",
     state: "Canada",
     rating: 4.9,
+    description: "Canada’s oldest national park, featuring majestic mountains, turquoise lakes, and abundant wildlife.",
   ),
   Place(
     name: "Mount Fuji",
@@ -49,6 +55,7 @@ List<Place> topPlaces = [
     city: "Honshu",
     state: "Japan",
     rating: 4.7,
+    description: "Japan’s iconic volcanic mountain, popular for climbing and offering scenic views year-round.",
   ),
   Place(
     name: "Plitvice Lakes",
@@ -56,6 +63,7 @@ List<Place> topPlaces = [
     city: "Lika-Senj",
     state: "Croatia",
     rating: 4.8,
+    description: "A UNESCO World Heritage site known for its chain of terraced lakes joined by waterfalls and lush forest.",
   ),
   Place(
     name: "Trolltunga",
@@ -63,6 +71,7 @@ List<Place> topPlaces = [
     city: "Vestland",
     state: "Norway",
     rating: 4.7,
+    description: "A famous rock formation jutting out over a cliff with stunning panoramic views of the surrounding fjords.",
   ),
   Place(
     name: "Antelope Canyon",
@@ -70,6 +79,7 @@ List<Place> topPlaces = [
     city: "Arizona",
     state: "USA",
     rating: 4.8,
+    description: "A slot canyon renowned for its smooth, wave-like rock formations and incredible light beams.",
   ),
   Place(
     name: "Hallstatt",
@@ -77,5 +87,6 @@ List<Place> topPlaces = [
     city: "Salzkammergut",
     state: "Austria",
     rating: 4.9,
+    description: "A charming lakeside village with alpine houses, historic churches, and stunning mountainous scenery.",
   ),
 ];

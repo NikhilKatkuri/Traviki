@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:traviki/Presentation/widgets/build_card.dart';
+import 'package:traviki/core/routes/app_routes.dart';
 import 'package:traviki/core/theme/app_colors.dart';
 import 'package:traviki/core/theme/app_theme.dart';
 import 'package:traviki/core/vectors/app_vectors.dart';
 import 'package:traviki/data/category_data.dart';
-import 'package:traviki/models/category.dart';
+import 'package:traviki/data/top_places_data.dart';
+import 'package:traviki/models/category.dart'; 
 import '../../widgets/navbar.dart';
 
 class SearchPage extends StatefulWidget {
@@ -99,6 +102,34 @@ class _SearchPageState extends State<SearchPage> {
                             ),
                           ),
                         ),
+                      ],
+                    ),
+                    SizedBox(height: 16),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Recommend",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: AppColors.dark,
+                          ),
+                        ),
+                        SizedBox(height: 16),
+                        SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            children: List.generate(topPlaces.length, (index)=>
+                            GestureDetector(
+                              onTap: (){
+                                Navigator.pushNamed(context, AppRoutes.view);
+                              },
+                              child: buildCard(topPlaces[index]),
+                            )
+                            ),
+                          ),
+                        )
                       ],
                     ),
                   ],

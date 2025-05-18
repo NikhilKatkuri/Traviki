@@ -4,6 +4,7 @@ class Place {
   final String city;
   final String state;
   final double rating;
+  final String description;
 
   Place({
     required this.name,
@@ -11,5 +12,6 @@ class Place {
     required this.city,
     required this.state,
     required this.rating,
+    required this.description,
   });
 }

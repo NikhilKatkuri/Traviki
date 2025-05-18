@@ -9,6 +9,7 @@ import 'package:traviki/Presentation/auth/register/app_register.dart';
 import 'package:traviki/Presentation/auth/welcome/app_welcome.dart';
 import 'package:traviki/Presentation/main/home/home.dart';
 import 'package:traviki/Presentation/main/main_wrapper.dart';
+import 'package:traviki/Presentation/main/view/view_page.dart';
 import 'package:traviki/Presentation/splash/app_splash.dart';
 
 // main
@@ -32,7 +33,7 @@ class AppRoutes {
   // main
   static const String main = '/main';
   static const String home = '/main/home';
-  
+  static const String view = '/view';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -60,7 +61,9 @@ class AppRoutes {
       case home:
         return MaterialPageRoute(builder: (_) => const Home());
       case main:
-        return MaterialPageRoute(builder: (_) =>  MainWrapper());
+        return MaterialPageRoute(builder: (_) => MainWrapper());
+      case view:
+        return MaterialPageRoute(builder: (_) => ViewPage());
       default:
         return MaterialPageRoute(
           builder:
