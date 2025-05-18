@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:traviki/Presentation/main/view/view_page.dart';
 import 'package:traviki/Presentation/widgets/build_card.dart';
-import 'package:traviki/core/routes/app_routes.dart';
 import 'package:traviki/core/theme/app_colors.dart';
 import 'package:traviki/core/theme/app_theme.dart';
 import 'package:traviki/core/vectors/app_vectors.dart';
@@ -123,7 +123,7 @@ class _SearchPageState extends State<SearchPage> {
                             children: List.generate(topPlaces.length, (index)=>
                             GestureDetector(
                               onTap: (){
-                                Navigator.pushNamed(context, AppRoutes.view);
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => ViewPage(places: topPlaces[index])));
                               },
                               child: buildCard(topPlaces[index]),
                             )

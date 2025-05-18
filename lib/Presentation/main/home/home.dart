@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:traviki/Presentation/main/view/view_page.dart';
 import 'package:traviki/Presentation/widgets/build_card.dart';
 import 'package:traviki/Presentation/widgets/build_list.dart';
 import 'package:traviki/Presentation/widgets/navbar.dart';
@@ -80,7 +81,19 @@ class _HomeState extends State<Home> {
                       child: Row(
                         children: List.generate(
                           topPlaces.length,
-                          (index) => buildCard(topPlaces[index]),
+                          (index) => GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder:
+                                      (context) =>
+                                          ViewPage(places: topPlaces[index]),
+                                ),
+                              );
+                            },
+                            child: buildCard(topPlaces[index]),
+                          ),
                         ),
                       ),
                     ),
@@ -114,7 +127,19 @@ class _HomeState extends State<Home> {
                       child: Column(
                         children: List.generate(
                           topPlaces.length,
-                          (index) => buildList(topPlaces[index]),
+                          (index) => GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder:
+                                      (context) =>
+                                          ViewPage(places: topPlaces[index]),
+                                ),
+                              );
+                            },
+                            child: buildList(topPlaces[index]),
+                          ),
                         ),
                       ),
                     ),

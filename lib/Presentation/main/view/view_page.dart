@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:traviki/core/theme/app_colors.dart';
 import 'package:traviki/data/top_places_data.dart';
+import 'package:traviki/models/place.dart';
 
 class ViewPage extends StatefulWidget {
-  const ViewPage({super.key});
+  final Place places;
+  const ViewPage({super.key, required this.places});
 
   @override
   State<ViewPage> createState() => _ViewPageState();
@@ -30,7 +32,7 @@ class _ViewPageState extends State<ViewPage> {
           SizedBox(
             height: 400,
             width: double.infinity,
-            child: Image.asset(topPlaces[2].imagePath, fit: BoxFit.cover),
+            child: Image.asset(widget.places.imagePath, fit: BoxFit.cover),
           ),
 
           // Top buttons
@@ -77,7 +79,7 @@ class _ViewPageState extends State<ViewPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        topPlaces[2].name,
+                        widget.places.name,
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -94,7 +96,7 @@ class _ViewPageState extends State<ViewPage> {
                           ),
                           SizedBox(width: 4),
                           Text(
-                            topPlaces[2].city,
+                            widget.places.city,
                             style: TextStyle(color: Colors.grey[700]),
                           ),
                         ],
@@ -134,13 +136,13 @@ class _ViewPageState extends State<ViewPage> {
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Image.asset(
-                          topPlaces[2].imagePath,
+                          widget.places.imagePath,
                           fit: BoxFit.fill,
                         ),
                       ),
                     ],
                   ),
-           
+
                   SizedBox(height: 16),
                   Align(
                     alignment: Alignment.centerLeft,
@@ -154,7 +156,7 @@ class _ViewPageState extends State<ViewPage> {
                   ),
                   SizedBox(height: 8),
                   Text(
-                    topPlaces[2].description,
+                    widget.places.description,
                     maxLines: 3,
                     overflow: TextOverflow.ellipsis,
                   ),
